@@ -13,3 +13,7 @@ def ping_host(network):
         command = ['ping', '-n', '1', ip]
         result = subprocess.call(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
+        if result == 0:
+            print(f'Host {ip} is up')
+        else:
+            print(f'Host {ip} is down')
