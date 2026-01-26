@@ -17,3 +17,6 @@ def ping_host(network):
             print(f'Host {ip} is up')
         else:
             print(f'Host {ip} is down')
+#example usage
+network = '172.30.59.253'
+ping_host(network)
