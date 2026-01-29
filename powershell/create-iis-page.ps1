@@ -1,4 +1,4 @@
- $htmlFile = "c:\inetpub\wwwroot\iisstart.htm"
+ $htmlFilePath = "c:\inetpub\wwwroot\iisstart.htm"
   
 $htmlContent = @"
 <!DOCTYPE html>
@@ -13,6 +13,6 @@ $htmlContent = @"
 </html>
 "@
   
-$htmlContent | Out-File -FilePath $htmlFilePath -Encoding UTFS
+$htmlContent | Out-File -FilePath $htmlFilePath -Encoding UTF8
   
 Write-Host "Webpage created successfully at "$htmlFilePath
