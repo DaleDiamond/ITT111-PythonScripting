@@ -1,5 +1,6 @@
- $htmlFilePath = "c:\inetpub\wwwroot\iisstart.htm"
-  
+ $htmlFilePath = "c:\inetpub\wwwroot\iisstart.htm"  #Line1 sets the HTML that we will be working with
+#Line4 defines a batch of content
+#Line5-15 actual HTML code 
 $htmlContent = @"
 <!DOCTYPE html>
 <html>
@@ -14,6 +15,5 @@ $htmlContent = @"
 </html>
 "@
   
-$htmlContent | Out-File -FilePath $htmlFilePath -Encoding UTF8
-  
+$htmlContent | Out-File -FilePath $htmlFilePath -Encoding UTF8  #takes the HTML code and writes it to the HTML file defined in Line1 
 Write-Host "Webpage created successfully at "$htmlFilePath
