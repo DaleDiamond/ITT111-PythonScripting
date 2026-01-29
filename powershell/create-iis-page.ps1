@@ -8,6 +8,7 @@ $htmlContent = @"
 </head>
 <body>
     <h1>Welcome to My Webpage!</h1>
+    <h2>By Diamond Dale</h2>
     <p>This is a sample webpage created using Powershell.</p>
 </body>
 </html>
